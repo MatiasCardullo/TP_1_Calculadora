@@ -44,8 +44,13 @@ if(y==0){
 printf("La multiplicacion de los operandos da: %d\n",multiplicar(x,y));
 if(x<0){
     printf("Factoreo imposible.\nEl numero no puede ser menor a cero\n");
+}else if(x>12){
+    printf("Error!! Resultado muy grande para la calculadora!!\n");
+    system("pause");
+    printf("El factorial del numero: %d es: %li\n",x,factorial(x));
 }else{
-    printf("El factorial de %d da: %li\n",x,factorial(x));}
+    printf("El factorial de %d da: %li\n",x,factorial(x));
+}
 printf("\n");
 }
 

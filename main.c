@@ -9,32 +9,31 @@ int main()
     int x=0;
     int y=0;
     system("title Calculadora");
-    system("mode con: cols=50 lines=26");
+    system("mode con: cols=52 lines=27");
     system("color 0a");
 
     do{
         system("cls");
-        printf("__________________________________________________\n");
-        printf("\t\tA=%d\t\tB=%d\n", x, y);
-        printf("__________________________________________________\n");
-        printf("  1- Ingresar 1er operando (A=x)\n");
-        printf("  2- Ingresar 2do operando (B=y)\n");
-        printf("  3- Calcular la suma (A+B)\n");
-        printf("  4- Calcular la resta (A-B)\n");
-        printf("  5- Calcular la division (A/B)\n");
-        printf("  6- Calcular la multiplicacion (A*B)\n");
-        printf("  7- Calcular el factorial (A!)\n");
-        printf("  8- Calcular todas las operaciones\n");
-        printf("  9- Salir\n");
-        printf("__________________________________________________\n");
-        printf("Ingrese una opcion: ");
+        printf("____________________________________________________");
+        printf("____________________________________________________\n");
+        printf("\tA=%d\t\tB=%d\n", x, y);
+        printf("____________________________________________________\n");
+        printf("\t1- Ingresar 1er operando (A=x)\n");
+        printf("\t2- Ingresar 2do operando (B=y)\n");
+        printf("\t3- Calcular la suma (A+B)\n");
+        printf("\t4- Calcular la resta (A-B)\n");
+        printf("\t5- Calcular la division (A/B)\n");
+        printf("\t6- Calcular la multiplicacion (A*B)\n");
+        printf("\t7- Calcular el factorial (A!)\n");
+        printf("\t8- Calcular todas las operaciones\n");
+        printf("\t9- Salir\n");
+        printf("____________________________________________________\n");
+        printf(" Ingrese una opcion: ");
         scanf("%d",&opcion);
 
         while(!validarRango(opcion,1,9)){
-            printf("\nError. Ingrese una opcion: ");
+            printf("\n Error. Ingrese una opcion: ");
             scanf("%d", &opcion);
-            system("cls");
-            printf("\nError. No ingrese letras ");
         }
         switch(opcion){
             case 1:
@@ -69,6 +68,11 @@ int main()
             case 7:
                 if(x<0){
                     printf("\nNo hay factorial de numeros negativos.\nIngrese otro numero.\n\n");
+                    system("pause");
+                }else if(x>12){
+                    printf("\nError!! Resultado muy grande para la calculadora!!\n\n");
+                    system("pause");
+                    printf("\nEl factorial del numero: %d es: %li\n\n",x,factorial(x));
                     system("pause");
                 }else{
                     printf("\nEl factorial del numero: %d es: %li\n\n",x,factorial(x));
