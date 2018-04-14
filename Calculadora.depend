@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
-1523592247 source:c:\users\matias\desktop\tp\tp1\tp_1_calculadora\funciones.c
+1523659185 source:c:\users\matias\desktop\tp\tp1\tp_1_calculadora\funciones.c
 
-1523592389 source:c:\users\matias\desktop\tp\tp1\tp_1_calculadora\main.c
+1523659208 source:c:\users\matias\desktop\tp\tp1\tp_1_calculadora\main.c
 	<stdio.h>
 	<stdlib.h>
 	"funciones.h"

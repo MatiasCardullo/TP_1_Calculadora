@@ -2,13 +2,12 @@
 #include <stdlib.h>
 #include "funciones.h"
 
-int main()
-{
+int main(){
     char seguir='s';
     int opcion=0;
     int x=0;
     int y=0;
-    system("title Calculadora");
+    system("title § Calculadora §");
     system("mode con: cols=52 lines=27");
     system("color 0a");
 
@@ -55,11 +54,10 @@ int main()
             case 5:
                 if(y==0){
                     printf("\nEl divisor no puede ser cero.\nIngrese otro numero.\n\n");
-                    system("pause");
                 }else{
                     printf("\nLa division de los operandos da: %.2f\n\n",dividir(x,y));
-                    system("pause");
                 }
+                system("pause");
                 break;
             case 6:
                 printf("\nLa multiplicacion de los operandos da: %d\n\n",multiplicar(x,y));
@@ -68,16 +66,12 @@ int main()
             case 7:
                 if(x<0){
                     printf("\nNo hay factorial de numeros negativos.\nIngrese otro numero.\n\n");
-                    system("pause");
                 }else if(x>12){
-                    printf("\nError!! Resultado muy grande para la calculadora!!\n\n");
-                    system("pause");
-                    printf("\nEl factorial del numero: %d es: %li\n\n",x,factorial(x));
-                    system("pause");
+                    printf("\nError. Resultado muy grande para la calculadora.\n\n");
                 }else{
                     printf("\nEl factorial del numero: %d es: %li\n\n",x,factorial(x));
-                    system("pause");
                 }
+                system("pause");
                 break;
             case 8:
                 todasLasOp(x,y);

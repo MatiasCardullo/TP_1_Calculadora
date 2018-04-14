@@ -37,18 +37,16 @@ printf("\n");
 printf("La suma de los operandos da: %d\n",sumar(x,y));
 printf("La resta de los operandos da: %d\n",restar(x,y));
 if(y==0){
-    printf("Division imposible.\nEl divisor no puede ser cero\n");
+    printf("Division imposible.\nEl divisor no puede ser cero.\n");
 }else{
     printf("La division de los operandos da: %.2f\n",dividir(x,y));
 }
 printf("La multiplicacion de los operandos da: %d\n",multiplicar(x,y));
 if(x<0){
-    printf("Factoreo imposible.\nEl numero no puede ser menor a cero\n");
+    printf("Factoreo imposible.\nEl numero no puede ser menor a cero.\n");
 }else if(x>12){
-    printf("Error!! Resultado muy grande para la calculadora!!\n");
-    system("pause");
-    printf("El factorial del numero: %d es: %li\n",x,factorial(x));
-}else{
+    printf("Error. Resultado muy grande para la calculadora.\n");
+    }else{
     printf("El factorial de %d da: %li\n",x,factorial(x));
 }
 printf("\n");
