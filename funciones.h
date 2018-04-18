@@ -3,7 +3,7 @@
 
 int sumar (int,int);
 int restar (int,int);
-int multiplicar (int,int);
+long multiplicar (int,int);
 float dividir (int,int);
 long factorial (int);
 void todasLasOp (int,int);

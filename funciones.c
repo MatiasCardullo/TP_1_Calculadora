@@ -11,8 +11,8 @@ int restar(int x, int y){
     return resultado;
 }
 
-int multiplicar(int x, int y){
-    int resultado;
+long multiplicar(int x, int y){
+    long resultado;
     resultado= x*y;
     return resultado;
 }
@@ -24,7 +24,7 @@ float dividir (int x, int y){
 }
 
 long factorial(int x){
-    int resultado;
+    long resultado;
     if(x==0){
     resultado=1;
     }else{
